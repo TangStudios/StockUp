@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tangstudios.infiniteloop.stockup">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/stock_arrow"
+        android:label="StockUp!"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.CreateLobby"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.JoinLobby"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.Lobby"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.Standings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.StockList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tangstudios.infiniteloop.stockup.StockView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.tangstudios.infiniteloop.stockup.FinalStandings"></activity>
+    </application>
+
+</manifest>
